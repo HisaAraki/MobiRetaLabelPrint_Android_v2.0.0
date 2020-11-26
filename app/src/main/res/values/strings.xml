@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">ラベルプリント</string>
+    <string name="db_name">mobiretalabel.db</string>
+
+    <string name="license">file:///android_asset/license.html</string>
+    <string name="permitelicense">permissionlicense.txt</string>
+
+    <!-- MainActivity トースト用 -->
+    <string name="bluetooth_is_not_supported">Bluetooth is not supported.</string>
+    <string name="bluetooth_is_not_working">Bluetooth is not working.</string>
+
+
+    <!-- MainMenuActivity メニュー用 -->
+    <string name="action_settings">設定</string>
+    <string name="action_settings2">このアプリについて</string>
+    <string name="action_settings3">オープンソースについて</string>
+
+    <!-- MainActivity メニュー用 -->
+    <string name="search">Search</string>
+
+    <!-- MainActivity ラベル用 -->
+    <string name="device_name">Device Name : </string>
+    <string name="device_address">Device Address : </string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="read_string">Read string : </string>
+    <string name="write_string">Wtite string : </string>
+
+    <!-- DeviceListActivity トースト用 -->
+    <string name="unknown_device">Unknown device</string>
+
+    <!-- DeviceListActivity メニュー用 -->
+    <string name="scan">Scan</string>
+    <string name="stop">Stop</string>
+
+    <!-- DeviceListActivity メニュー用 -->
+    <string name="bt">BT</string>
+
+    <!-- Google OAuth 対応-->
+    <!-- string name="server_client_id">156023586152-kcabeis61kjml5dl013plva8an2hevbp.apps.googleusercontent.com</string -->
+    <string name="server_client_id">156023586152-kcabeis61kjml5dl013plva8an2hevbp.apps.googleusercontent.com</string>
+    <string name="server_address">https://acrosssub.mobireta.com/</string>
+    <string name="google_oauth">mobiretalabelgoogle.php</string>
+    <string name="basic_id">mobirLabgooGLeLoginPhp</string>
+    <string name="basic_pw">AcSed$Shi305%12018nV19</string>
+
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "156023586152",
+    "firebase_url": "https://mobile-retailing.firebaseio.com",
+    "project_id": "mobile-retailing",
+    "storage_bucket": "mobile-retailing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156023586152:android:0d59c9a663c1d96a",
+        "android_client_info": {
+          "package_name": "com.mobireta.mobiretalabelprint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156023586152-mskifhe5alr9u1oes2c7ngmtof2b91eq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobireta.mobiretalabelprint",
+            "certificate_hash": "ab86496ea9b23c2fba2ed95e33ea1f2a0e289575"
+          }
+        },
+        {
+          "client_id": "156023586152-kcabeis61kjml5dl013plva8an2hevbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDufeG4WEEmE3SGNMJXTKADgq91aFZojtw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156023586152-kcabeis61kjml5dl013plva8an2hevbp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "156023586152-a5jgvstr6ut1446akl0f684qamg9m1pv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mobireta.MobiRetaLabelPrint"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

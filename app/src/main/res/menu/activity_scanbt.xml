@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuitem_bt"
+        android:icon="@mipmap/ic_bluetooth_white"
+        android:title="@string/scan"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/menuitem_scan"
+        android:icon="@mipmap/ic_barcode_256"
+        android:title="@string/bt"
+        app:showAsAction="ifRoom|withText"/>
+
+</menu>

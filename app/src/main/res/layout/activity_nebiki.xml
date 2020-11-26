@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/et"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".NebikiActivity">
+
+    <TextView
+        android:id="@+id/tvNebikiStatus"
+        android:layout_width="160dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right|top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txNebikiShohinCD"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="商品CD"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNebikiShohinCD"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="13"
+        android:nextFocusDown="@+id/etNebikiSell"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txNebikiShohinCD"
+        app:layout_constraintTop_toTopOf="@+id/txNebikiShohinCD" />
+
+    <TextView
+        android:id="@+id/tvNebikiSell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="売　価"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txNebikiShohinCD"
+        app:layout_constraintTop_toBottomOf="@+id/etNebikiShohinCD" />
+
+    <EditText
+        android:id="@+id/etNebikiSell"
+        android:layout_width="214dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="4"
+        android:nextFocusDown="@+id/etNebiki"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvNebikiSell"
+        app:layout_constraintTop_toTopOf="@+id/tvNebikiSell" />
+
+    <Button
+        android:id="@+id/btNebiki50"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="50円"
+        android:textColor="@color/colorStrawberry"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btNebiki100"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNebikiSell" />
+
+    <Button
+        android:id="@+id/btNebiki100"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="100円"
+        android:textSize="14sp"
+        android:textColor="@color/colorTeal"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toStartOf="@+id/btNebiki150"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNebiki50"
+        app:layout_constraintTop_toBottomOf="@+id/etNebikiSell" />
+
+    <Button
+        android:id="@+id/btNebiki150"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="150円"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlueberry"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toStartOf="@+id/btNebiki200"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNebiki100"
+        app:layout_constraintTop_toBottomOf="@+id/etNebikiSell" />
+
+    <Button
+        android:id="@+id/btNebiki200"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="200円"
+        android:textColor="@color/colorGrape"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNebiki150"
+        app:layout_constraintTop_toBottomOf="@+id/etNebikiSell" />
+
+    <TextView
+        android:id="@+id/tvNebiki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="値　引"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tvNebikiSell"
+        app:layout_constraintTop_toBottomOf="@+id/btNebiki50" />
+
+    <EditText
+        android:id="@+id/etNebiki"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvNebiki"
+        app:layout_constraintTop_toTopOf="@+id/tvNebiki" />
+
+    <Button
+        android:id="@+id/btNebiki1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="1枚"
+        android:textColor="@color/colorStrawberry"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btNebiki2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNebiki" />
+
+    <Button
+        android:id="@+id/btNebiki2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="2枚"
+        android:textColor="@color/colorTeal"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btNebiki3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNebiki1"
+        app:layout_constraintTop_toBottomOf="@+id/etNebiki" />
+
+    <Button
+        android:id="@+id/btNebiki3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="3枚"
+        android:textColor="@color/colorBlueberry"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btNebiki5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNebiki2"
+        app:layout_constraintTop_toBottomOf="@+id/etNebiki" />
+
+    <Button
+        android:id="@+id/btNebiki5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="5枚"
+        android:textColor="@color/colorGrape"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNebiki3"
+        app:layout_constraintTop_toBottomOf="@+id/etNebiki" />
+
+    <TextView
+        android:id="@+id/tvNebikiMaisu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="枚　数"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tvNebiki"
+        app:layout_constraintTop_toBottomOf="@+id/btNebiki1" />
+
+    <EditText
+        android:id="@+id/etNebikiMaisu"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvNebikiMaisu"
+        app:layout_constraintTop_toTopOf="@+id/tvNebikiMaisu" />
+
+    <Button
+        android:id="@+id/btNebikiPrint"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/colorWhite"
+        android:text="印刷"
+        android:textColor="@color/colorBlueberry"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btNebikiClear"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btNebikiClear"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorWhite"
+        android:text="クリア"
+        android:textColor="@color/colorStrawberry"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNebikiPrint" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

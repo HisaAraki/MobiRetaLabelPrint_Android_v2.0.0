@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MainMenuActivity">
+
+    <Button
+        android:id="@+id/btNefuda"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:onClick="onButtonClick"
+        android:text="値札ラベル"
+        android:textColor="@color/colorBlueberry"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btShomi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btShomi"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:onClick="onButtonClick"
+        android:text="賞味期限ラベル"
+        android:textColor="@color/colorTeal"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btNebikiMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btNefuda" />
+
+    <Button
+        android:id="@+id/btNebikiMenu"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:onClick="onButtonClick"
+        android:text="値引ラベル"
+        android:textColor="@color/colorGrape"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btSetting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btShomi" />
+
+    <Button
+        android:id="@+id/btSetting"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:onClick="onButtonClick"
+        android:text="プリンタ設定"
+        android:textAlignment="center"
+        android:textColor="@color/colorStrawberry"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/txUertouroku"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btNebikiMenu" />
+
+    <TextView
+        android:id="@+id/txtCopyright"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="(C) 2018 Mobile Retaling Products"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txUertouroku"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCopyright"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

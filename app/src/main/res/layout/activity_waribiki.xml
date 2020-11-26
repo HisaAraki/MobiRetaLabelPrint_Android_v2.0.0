@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/et"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".WaribikiActivity">
+
+    <TextView
+        android:id="@+id/tvWaribikiStatus"
+        android:layout_width="160dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right|top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txWaribikiShohinCD"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="商品CD"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etWaribikiShohinCD"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="13"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txWaribikiShohinCD"
+        app:layout_constraintTop_toTopOf="@+id/txWaribikiShohinCD" />
+
+    <TextView
+        android:id="@+id/tvWaribikiSell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="売　価"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txWaribikiShohinCD"
+        app:layout_constraintTop_toBottomOf="@+id/etWaribikiShohinCD" />
+
+    <EditText
+        android:id="@+id/etWaribikiSell"
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvWaribikiSell"
+        app:layout_constraintTop_toTopOf="@+id/tvWaribikiSell" />
+
+    <Button
+        android:id="@+id/btWaribiki10"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="10%"
+        android:textSize="18sp"
+        android:textColor="@color/colorStrawberry"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toStartOf="@+id/btWaribiki20"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etWaribikiSell" />
+
+    <Button
+        android:id="@+id/btWaribiki20"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="20%"
+        android:textSize="18sp"
+        android:textColor="@color/colorTeal"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toStartOf="@+id/btWaribiki30"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btWaribiki10"
+        app:layout_constraintTop_toBottomOf="@+id/etWaribikiSell" />
+
+    <Button
+        android:id="@+id/btWaribiki30"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="30%"
+        android:textColor="@color/colorBlueberry"
+        android:background="@color/colorWhite"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btWaribiki50"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btWaribiki20"
+        app:layout_constraintTop_toBottomOf="@+id/etWaribikiSell" />
+
+    <Button
+        android:id="@+id/btWaribiki50"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="50%"
+        android:textSize="18sp"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorGrape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btWaribiki30"
+        app:layout_constraintTop_toBottomOf="@+id/etWaribikiSell" />
+
+    <TextView
+        android:id="@+id/tvWaribiki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="割　引"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tvWaribikiSell"
+        app:layout_constraintTop_toBottomOf="@+id/btWaribiki10" />
+
+    <EditText
+        android:id="@+id/etWaribiki"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvWaribiki"
+        app:layout_constraintTop_toTopOf="@+id/tvWaribiki" />
+
+    <Button
+        android:id="@+id/btWaribiki1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="1枚"
+        android:textColor="@color/colorStrawberry"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btWaribiki2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etWaribiki" />
+
+    <Button
+        android:id="@+id/btWaribiki2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="2枚"
+        android:textColor="@color/colorTeal"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btWaribiki3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btWaribiki1"
+        app:layout_constraintTop_toBottomOf="@+id/etWaribiki" />
+
+    <Button
+        android:id="@+id/btWaribiki3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="3枚"
+        android:textColor="@color/colorBlueberry"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btWaribiki5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btWaribiki2"
+        app:layout_constraintTop_toBottomOf="@+id/etWaribiki" />
+
+    <Button
+        android:id="@+id/btWaribiki5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="5枚"
+        android:textColor="@color/colorGrape"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btWaribiki3"
+        app:layout_constraintTop_toBottomOf="@+id/etWaribiki" />
+
+    <TextView
+        android:id="@+id/tvNebikiMaisu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="枚　数"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tvWaribiki"
+        app:layout_constraintTop_toBottomOf="@+id/btWaribiki1" />
+
+    <EditText
+        android:id="@+id/etWaribikiMaisu"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvNebikiMaisu"
+        app:layout_constraintTop_toTopOf="@+id/tvNebikiMaisu" />
+
+    <Button
+        android:id="@+id/btWaribikiPrint"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/colorWhite"
+        android:text="印刷"
+        android:textColor="@color/colorBlueberry"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btWaribikiHangaku"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btWaribikiClear"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorWhite"
+        android:text="クリア"
+        android:textColor="@color/colorStrawberry"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btWaribikiHangaku" />
+
+    <Button
+        android:id="@+id/btWaribikiHangaku"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorWhite"
+        android:text="半額"
+        android:textColor="@color/colorGrape"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btWaribikiClear"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btWaribikiPrint" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

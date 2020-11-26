@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/et"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".NesageActivity">
+
+    <TextView
+        android:id="@+id/tvNesageStatus"
+        android:layout_width="160dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right|top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txNesageShohinCD"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="商品CD"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNesageShohinCD"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="13"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txNesageShohinCD"
+        app:layout_constraintTop_toTopOf="@+id/txNesageShohinCD" />
+
+    <TextView
+        android:id="@+id/tvNesageSell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="売　　　価"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txNesageShohinCD"
+        app:layout_constraintTop_toBottomOf="@+id/etNesageShohinCD" />
+
+    <EditText
+        android:id="@+id/etNesageSell"
+        android:layout_width="120dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvNesageSell"
+        app:layout_constraintTop_toTopOf="@+id/tvNesageSell" />
+
+    <TextView
+        android:id="@+id/tvNesage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="値下後価格"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tvNesageSell"
+        app:layout_constraintTop_toBottomOf="@+id/etNesageSell" />
+
+    <EditText
+        android:id="@+id/etNesage"
+        android:layout_width="119dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvNesage"
+        app:layout_constraintTop_toTopOf="@+id/tvNesage" />
+
+    <Button
+        android:id="@+id/btNesage1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="1枚"
+        android:textColor="@color/colorStrawberry"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btNesage2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNesage" />
+
+    <Button
+        android:id="@+id/btNesage2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="2枚"
+        android:textColor="@color/colorTeal"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btNesage3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNesage1"
+        app:layout_constraintTop_toBottomOf="@+id/etNesage" />
+
+    <Button
+        android:id="@+id/btNesage3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="3枚"
+        android:textColor="@color/colorBlueberry"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btNesage5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNesage2"
+        app:layout_constraintTop_toBottomOf="@+id/etNesage" />
+
+    <Button
+        android:id="@+id/btNesage5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="5枚"
+        android:textColor="@color/colorGrape"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNesage3"
+        app:layout_constraintTop_toBottomOf="@+id/etNesage" />
+
+    <TextView
+        android:id="@+id/tvNebikiMaisu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="枚　数"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/btNesage1"
+        app:layout_constraintTop_toBottomOf="@+id/btNesage1" />
+
+    <EditText
+        android:id="@+id/etNesageMaisu"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvNebikiMaisu"
+        app:layout_constraintTop_toTopOf="@+id/tvNebikiMaisu" />
+
+    <Button
+        android:id="@+id/btNesagePrint"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/colorWhite"
+        android:text="印刷"
+        android:textColor="@color/colorBlueberry"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btNesageClear"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btNesageClear"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorWhite"
+        android:text="クリア"
+        android:textColor="@color/colorStrawberry"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btNesagePrint" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.wiget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".LabelActivity">
+
+    <TextView
+        android:id="@+id/txHandy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="ハンディーターミナル設定"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/swKeyboardKbn"
+        android:layout_width="123dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="テンキー"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txHandy"
+        app:layout_constraintTop_toBottomOf="@+id/txHandy" />
+
+
+    <Switch
+        android:id="@+id/swReaderKbn"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:text="リーダー"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/swKeyboardKbn"
+        app:layout_constraintTop_toTopOf="@+id/swKeyboardKbn" />
+
+    <TextView
+        android:id="@+id/txLabelSettei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ラベル設定"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txHandy"
+        app:layout_constraintTop_toBottomOf="@+id/swKeyboardKbn" />
+
+    <TextView
+        android:id="@+id/txLabelMaxmaisu"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="最大印刷枚数"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txLabelSettei"
+        app:layout_constraintTop_toBottomOf="@+id/txLabelSettei" />
+
+    <EditText
+        android:id="@+id/etLabelMaxmaisu"
+        android:layout_width="73dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/txLabelMaxmaisu"
+        app:layout_constraintTop_toTopOf="@+id/txLabelMaxmaisu" />
+
+    <TextView
+        android:id="@+id/txLabelNefuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="値札ラベル"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txLabelMaxmaisu"
+        app:layout_constraintTop_toBottomOf="@+id/etLabelMaxmaisu" />
+
+    <EditText
+        android:id="@+id/etLabelNefuda"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etLabelMaxmaisu"
+        app:layout_constraintTop_toTopOf="@+id/txLabelNefuda" />
+
+    <TextView
+        android:id="@+id/txLabelShomi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="賞味期限ラベル"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txLabelNefuda"
+        app:layout_constraintTop_toBottomOf="@+id/etLabelNefuda" />
+
+    <EditText
+        android:id="@+id/etLabelShomi"
+        android:layout_width="73dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etLabelNefuda"
+        app:layout_constraintTop_toTopOf="@+id/txLabelShomi" />
+
+    <TextView
+        android:id="@+id/txLabelNebiki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="値引シール"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txLabelShomi"
+        app:layout_constraintTop_toBottomOf="@+id/etLabelShomi" />
+
+    <EditText
+        android:id="@+id/etLabelNebiki"
+        android:layout_width="68dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etLabelShomi"
+        app:layout_constraintTop_toTopOf="@+id/txLabelNebiki" />
+
+
+    <TextView
+        android:id="@+id/txLabelBarcode"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:text="値引バーコード"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txLabelNebiki"
+        app:layout_constraintTop_toBottomOf="@+id/etLabelNebiki" />
+
+    <EditText
+        android:id="@+id/etLabelBarcode"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etLabelNebiki"
+        app:layout_constraintTop_toTopOf="@+id/txLabelBarcode" />
+
+
+    <Button
+        android:id="@+id/btLabelUpdate"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorWhite"
+        android:onClick="onButtonClick"
+        android:text="設定"
+        android:textColor="@color/colorStrawberry"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.wiget.ConstraintLayout>

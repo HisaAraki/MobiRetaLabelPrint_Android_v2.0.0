@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:visibility="visible"
+    tools:context=".PrinterActivity">
+
+
+    <TextView
+        android:id="@+id/tvNefudaStatus"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right|top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgPrinter"
+        android:layout_width="333dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:checkedButton="@+id/rbEP2DL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbEP2DL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="TEC B-EP2DL (TPCL)"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbLP2DL"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:text="TEC B-LP2DL（TPCL 剥離不可）"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbPw208"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:text="SATO PW208(SBPL Status4)"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbPt208"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:text="Brother RJ-2150(SBPL Status3)"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tvPrinter"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="プリンタ名"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgPrinter" />
+
+    <TextView
+        android:id="@+id/tvPrintername"
+        android:layout_width="211dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvPrinter"
+        app:layout_constraintTop_toTopOf="@+id/tvPrinter" />
+
+    <TextView
+        android:id="@+id/tvPAddress"
+        android:layout_width="78dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="8dp"
+        android:text="BTアドレス"
+        app:layout_constraintStart_toStartOf="@+id/tvPrinter"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrinter" />
+
+    <TextView
+        android:id="@+id/tvPrinterAddress"
+        android:layout_width="217dp"
+        android:layout_height="22dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/tvPAddress"
+        app:layout_constraintTop_toTopOf="@+id/tvPAddress" />
+
+    <Button
+        android:id="@+id/btInji"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorWhite"
+        android:text="印字"
+        android:textColor="@color/colorBlueberry"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btPSetting"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btPSetting"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorWhite"
+        android:text="設定"
+        android:textColor="@color/colorStrawberry"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btInji" />
+
+    <TextView
+        android:id="@+id/tvPrintName"
+        android:layout_width="260dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="プリンタ名については、メーカの出荷時の初期値設定を変更しないようお願いいたします。"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPAddress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

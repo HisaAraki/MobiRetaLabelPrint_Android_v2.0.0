@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".NefudaActivity">
+
+    <TextView
+        android:id="@+id/tvNefudaStatus"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right|top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txNefudaShohinCD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="商品CD"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNefudaShohinCD"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="13"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txNefudaShohinCD"
+        app:layout_constraintTop_toBottomOf="@+id/txNefudaShohinCD" />
+
+    <TextView
+        android:id="@+id/tvNefudaHinmei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="品　名"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etNefudaShohinCD"
+        app:layout_constraintTop_toBottomOf="@+id/etNefudaShohinCD" />
+
+    <EditText
+        android:id="@+id/etNefudaHinmei"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:ems="30"
+        android:inputType="text"
+        android:maxLength="30"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tvNefudaHinmei"
+        app:layout_constraintTop_toBottomOf="@+id/tvNefudaHinmei" />
+
+    <TextView
+        android:id="@+id/txNefudaSell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="売　価"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etNefudaHinmei"
+        app:layout_constraintTop_toBottomOf="@+id/etNefudaHinmei" />
+
+    <EditText
+        android:id="@+id/etNefudaSell"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="5"
+        android:textAlignment="viewEnd"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/etNefudaHinmei"
+        app:layout_constraintTop_toBottomOf="@+id/txNefudaSell" />
+
+    <Button
+        android:id="@+id/btNefuda1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1枚"
+        android:textSize="24sp"
+        android:textColor="@color/colorStrawberry"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toStartOf="@+id/btNefuda2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNefudaMaisu" />
+
+    <Button
+        android:id="@+id/btNefuda2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="2枚"
+        android:textSize="24sp"
+        android:textColor="@color/colorTeal"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toStartOf="@+id/btNefuda3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNefuda1"
+        app:layout_constraintTop_toBottomOf="@+id/tvNefudaMaisu" />
+
+    <Button
+        android:id="@+id/btNefuda3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="3枚"
+        android:textSize="24sp"
+        android:textColor="@color/colorBlueberry"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toStartOf="@+id/btNefuda5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNefuda2"
+        app:layout_constraintTop_toTopOf="@+id/btNefuda1" />
+
+
+    <TextView
+        android:id="@+id/tvNefudaMaisu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="枚　数"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etNefudaSell"
+        app:layout_constraintTop_toBottomOf="@+id/etNefudaSell" />
+
+    <EditText
+        android:id="@+id/etNefudaMaisu"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textAlignment="viewEnd"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tvNefudaMaisu"
+        app:layout_constraintTop_toBottomOf="@+id/btNefuda1" />
+
+    <Button
+        android:id="@+id/btNefuda5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="5枚"
+        android:textSize="24sp"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorGrape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNefuda3"
+        app:layout_constraintTop_toTopOf="@+id/btNefuda1" />
+
+    <Button
+        android:id="@+id/btNefudaPrint"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/colorWhite"
+        android:text="発行"
+        android:textColor="@color/colorBlueberry"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btNefudaClear"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btNefudaClear"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorWhite"
+        android:text="クリア"
+        android:textColor="@color/colorStrawberry"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNefudaPrint" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

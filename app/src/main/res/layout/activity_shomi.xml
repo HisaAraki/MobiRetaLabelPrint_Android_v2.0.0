@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ShomiActivity">
+
+    <TextView
+        android:id="@+id/tvShomiStatus"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="right|top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txShomiShohinCD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="商品CD"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etShomiShohinCD"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="13"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/txShomiShohinCD"
+        app:layout_constraintTop_toBottomOf="@+id/txShomiShohinCD" />
+
+    <TextView
+        android:id="@+id/tvShomiHinmei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="品　名"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etShomiShohinCD"
+        app:layout_constraintTop_toBottomOf="@+id/etShomiShohinCD" />
+
+    <EditText
+        android:id="@+id/etShomiHinmei"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="30"
+        android:inputType="text"
+        android:maxLength="30"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tvShomiHinmei"
+        app:layout_constraintTop_toBottomOf="@+id/tvShomiHinmei" />
+
+    <TextView
+        android:id="@+id/txShomiDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="賞味日数"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/swShomi"
+        app:layout_constraintTop_toBottomOf="@+id/swShomi" />
+
+    <EditText
+        android:id="@+id/etShomidate"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txShomiDate"
+        app:layout_constraintTop_toTopOf="@+id/txShomiDate" />
+
+    <Button
+        android:id="@+id/btShomi1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="1枚"
+        android:textColor="@color/colorStrawberry"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btShomi2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etShomidate" />
+
+    <Button
+        android:id="@+id/btShomi2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="2枚"
+        android:textColor="@color/colorTeal"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btShomi3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btShomi1"
+        app:layout_constraintTop_toBottomOf="@+id/etShomidate" />
+
+    <Button
+        android:id="@+id/btShomi3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="3枚"
+        android:textColor="@color/colorBlueberry"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btShomi5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btShomi2"
+        app:layout_constraintTop_toBottomOf="@+id/etShomidate" />
+
+
+    <TextView
+        android:id="@+id/tvShomiMaisu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="枚　数"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txShomiDate"
+        app:layout_constraintTop_toBottomOf="@+id/btShomi1" />
+
+    <EditText
+        android:id="@+id/etShomiMaisu"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvShomiMaisu"
+        app:layout_constraintTop_toTopOf="@+id/tvShomiMaisu" />
+
+    <Button
+        android:id="@+id/btShomi5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:text="5枚"
+        android:textColor="@color/colorGrape"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btShomi3"
+        app:layout_constraintTop_toBottomOf="@+id/etShomidate" />
+
+    <Button
+        android:id="@+id/btShomiPrint"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/colorWhite"
+        android:text="発行"
+        android:textColor="@color/colorBlueberry"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btShomiClear"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btShomiClear"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorWhite"
+        android:text="クリア"
+        android:textColor="@color/colorStrawberry"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btShomiPrint" />
+
+    <Switch
+        android:id="@+id/swShomi"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="製造日"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etShomiHinmei"
+        app:layout_constraintTop_toBottomOf="@+id/etShomiHinmei" />
+
+    <TextView
+        android:id="@+id/tvSeizoday"
+        android:layout_width="163dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="4dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/swShomi"
+        app:layout_constraintTop_toTopOf="@+id/swShomi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MasterActivity">
+
+    <TextView
+        android:id="@+id/tvTenpoCD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="店舗CD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edTenpoCD"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvTenpoCD"
+        app:layout_constraintTop_toTopOf="@+id/tvTenpoCD" />
+
+    <TextView
+        android:id="@+id/tvMobileCD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="端末CD"
+        app:layout_constraintStart_toStartOf="@+id/tvTenpoCD"
+        app:layout_constraintTop_toBottomOf="@+id/edTenpoCD" />
+
+
+    <EditText
+        android:id="@+id/edMobileCD"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvMobileCD"
+        app:layout_constraintTop_toTopOf="@+id/tvMobileCD" />
+
+    <TextView
+        android:id="@+id/tvKaisha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名称(※必須)"
+        app:layout_constraintStart_toStartOf="@+id/tvMobileCD"
+        app:layout_constraintTop_toBottomOf="@+id/edMobileCD" />
+
+    <EditText
+        android:id="@+id/edKaishakj"
+        android:layout_width="288dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/tvKaisha"
+        app:layout_constraintTop_toBottomOf="@+id/tvKaisha" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="住所(※必須)"
+        app:layout_constraintStart_toStartOf="@+id/tvZip"
+        app:layout_constraintTop_toBottomOf="@+id/edZipcd" />
+
+    <EditText
+        android:id="@+id/edAddress1"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+    <EditText
+        android:id="@+id/edZipcd"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tvZip"
+        app:layout_constraintTop_toTopOf="@+id/tvZip" />
+
+    <TextView
+        android:id="@+id/tvZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="〒"
+        app:layout_constraintStart_toStartOf="@+id/edKaishakj"
+        app:layout_constraintTop_toBottomOf="@+id/edKaishakj" />
+
+    <EditText
+        android:id="@+id/edAddress2"
+        android:layout_width="293dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edAddress1"
+        app:layout_constraintTop_toBottomOf="@+id/edAddress1" />
+
+    <TextView
+        android:id="@+id/tvTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEL(※必須)"
+        app:layout_constraintStart_toStartOf="@+id/edAddress2"
+        app:layout_constraintTop_toBottomOf="@+id/edAddress2" />
+
+    <EditText
+        android:id="@+id/edTel"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:maxLength="15"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tvTel"
+        app:layout_constraintTop_toTopOf="@+id/tvTel" />
+
+    <TextView
+        android:id="@+id/tvFax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAX"
+        app:layout_constraintStart_toStartOf="@+id/tvTel"
+        app:layout_constraintTop_toBottomOf="@+id/edTel" />
+
+    <EditText
+        android:id="@+id/edFax"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:maxLength="15"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tvFax"
+        app:layout_constraintTop_toTopOf="@+id/tvFax" />
+
+
+    <Button
+        android:id="@+id/btMenuNebiki"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorWhite"
+        android:onClick="onButtonClick"
+        android:text="登録"
+        android:textColor="@color/colorStrawberry"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
